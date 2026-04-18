@@ -14,7 +14,7 @@ public class TechSpirit {
                 "🚀 [System Boot] %s\n" +
                         "🌟 OS: %s\n" +
                         "⚙️ Engine: Java %s\n" +
-                        "📡 Status: Ready for Liftoff!",
+                        "📡 Status: Ready for Liftoff! ",
                 time, os, version
         );
     }
