@@ -23,6 +23,6 @@ jobs:
           settings-path: ${{ github.workspace }} # Auto-generates a temporary settings.xml
 
       - name: Publish to GitHub Packages
-        run: mvn --batch-mode deploy
+        run: mvn --batch-mode deploy -s $GITHUB_WORKSPACE/settings.xml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Automatically provided by GitHub
